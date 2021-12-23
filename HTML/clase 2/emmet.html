@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMET</title>
+</head>
+<body>
+
+    <h1>¿Qué es Emmet?</h1>
+    <p>Emmet es un plugin que nos ayuda a escribir código HTML más rápido.</p>
+
+    <!-- Clase -->
+
+    <!-- .class -->
+    .nombre
+    <div class="nombre"></div>
+
+    <div class="class"></div>
+    <div class="NombreClase"></div>
+
+    <p class="bloque"></p> <!-- p.bloque -->
+    <h1 class="bloque-2"></h1>
+    <ul class="bloque-lista"></ul>
+
+    <!-- #id -->
+    <!-- #container -->
+    <div id="container"></div>
+    <h2 id="titulo"></h2>
+
+    #texto
+    <div id="texto"></div>
+    <h5 id="texto-2"></h5>
+
+    <!-- Combinaciones de Id y Clases -->
+    <div class="container" id="nav"></div>
+    <h5 class="titulo" id="h5"></h5>
+
+    <p class="clase" id="texto"></p>
+
+    <!-- LISTAS -->
+    ul>li
+    <ul>
+        <li></li>
+    </ul> 
+
+    ol>li*5
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    ul.nav>li*5
+    <ul class="nav">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Escribir dentro de Emmet -->
+    <h4>aquí va el texto</h4>
+    <h1>titulo</h1>
+
+    .container>h1{encabezado}
+    <div class="container">
+        <h1>encabezado</h1>
+    </div>
+
+    .container>h1{titulo}+p{texto}+a{link}
+    <div class="container">
+        <h1>titulo</h1>
+        <p>texto</p>
+        <a href="">link</a>
+    </div>
+
+    <!-- .container>h1{titulo}^p{lorem3} -->
+    <div class="container"> <!-- padre -->
+        <h1>titulo</h1> <!-- hijo -->
+    </div>
+    <p>lorem3</p>
+
+    <!-- símbolo '>' sirve para asignar a los hijos de una etiqueta -->
+    .container>h1
+    <div class="container">
+        <h1></h1>
+    </div>
+
+    <!-- con el '+' añade la etiqueta de forma independiente -->
+    .container+h1
+    <div class="container"></div>
+    <h1></h1>
+
+    <!-- símbolo '^' será independiente del primer padre -->
+    .container>h1^p
+    <div class="conainer">
+        <h1></h1>
+    </div>
+    <p></p>
+
+
+    <ul>
+        <li class="nav"></li>
+        <li class="nav"></li>
+        <li class="nav"></li>
+    </ul>
+
+    ul>li>a.producto*5
+    <ul>
+        <li><a href="" class="producto"></a><a href="" class="producto"></a><a href="" class="producto"></a><a href="" class="producto"></a><a href="" class="producto"></a></li>
+    </ul>
+
+    ul>(li>a.producto)*3
+    <ul>
+        <li><a href="" class="producto"></a></li>
+        <li><a href="" class="producto"></a></li>
+        <li><a href="" class="producto"></a></li>
+    </ul>
+
+    ul>(li>a#producto-$)*3
+    <ul>
+        <li><a href="" id="producto-1"></a></li>
+        <li><a href="" id="producto-2"></a></li>
+        <li><a href="" id="producto-3"></a></li>
+    </ul>
+
+    <ul>
+        <li><a href="" id="product_1"></a></li>
+        <li><a href="" id="product_2"></a></li>
+        <li><a href="" id="product_3"></a></li>
+    </ul>
+
+</body>
+</html>
