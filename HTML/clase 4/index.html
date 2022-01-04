@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="/ejercicio.html" target="_self">
+        <label for="user-name">Ingrese su nombre</label> <br>
+        <input type="text" placeholder="Peter Parker" name="user-name" id="user-name">
+
+        <br><br>
+
+        <label for="correo">email</label> <br>
+        <input type="email" placeholder="john@gmail.com" name="correo" id="correo">
+
+        <br><br>
+
+        <label for="password">Ingrese su contraseña</label> <br>
+        <input type="password" name="password">
+
+        <br><br>
+
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" name="checkbox">
+
+        <br><br>
+
+        <label for="radio-btn">Escoge tu lenguaje favorito</label> <br> <br>
+
+        <input type="radio" name="fav_lang" id="javascript" value="JavaScript">
+        <label for="javascript">JavaScript</label> <br>
+
+        <input type="radio" name="fav_lang" id="rust" value="rustlang">
+        <label for="javascript">Rust</label> <br>
+
+        <input type="radio" name="fav_lang" id="python" value="python">
+        <label for="python">Python</label> <br> <br>
+
+        <input type="submit" name="submit" value="enviar"> <br><br>
+
+        <a href="http://www.google.com" target="_blank">
+            <input type="button" value="Google">
+        </a>
+        
+        <br><br>
+
+        <label for="years">Cuantos Años Tienes</label>
+        <input type="number" step="1"> <br><br>
+
+        <label for="range">Que tanto te gusto SpiderMan?</label> <br>
+
+        <span>poco</span>
+        <input type="range" min="0" max="10" step="10">
+        <span>mucho</span>
+    </form>
+
+    <!-- Dropdown -->
+    <form action="/ejercicio.html">
+        <label for="comida">Que quieres de Comida?</label>
+        <select name="comida" id="comida">
+            <option value="pizza">Pizza</option>
+            <option value="hamburguesa">Hamburguesa</option>
+            <option value="pasta">Pasta</option>
+            <option value="tacos">Tacos</option>
+            <option value="sushi">Sushi</option>
+        </select>
+
+        <!--
+            "comida": hamburguesa,
+        -->
+    </form>
+
+    <br>
+
+    <!-- Datalist -->
+    <form action="/ejercicio.html">
+        <label for="ciudad">Que ciudad quieres visitar?</label> <br>
+        <input type="text" name="ciudad" list="ciudades" id="ciudad">
+
+        <datalist id="ciudades">
+            <option value="New York"></option>
+            <option value="Tokio"></option>
+            <option value="Londres"></option>
+            <option value="Paris"></option>
+            <option value="Madrid"></option>
+        </datalist>
+    </form>
+
+    <br>
+
+    <!-- Textarea -->
+    <form action="/ejercicio.html">
+        <label for="comentario">Escribe un comentario</label> <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos un comentario..."></textarea>
+    </form>
+</body>
+</html>
