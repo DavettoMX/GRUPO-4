@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        a {
+            color: rgb(212, 212, 212);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h4 {
+            margin-top: -22px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
+
+        section {
+            border: 10px solid #ccc;
+            width: 50%;
+            padding: 40px;
+            margin: 20px
+        }
+
+        aside {
+            text-align: center;
+            width: 35%;
+            border: 10px solid #ccc;
+        }
+
+        aside ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        aside li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            border: 1px solid #fff;
+        }
+
+        .rightBar {
+            float: right;
+            margin-left: 16px;
+        }
+
+        .figcaption {
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            font-size: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <h4>Welcome to my Life!</h4>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Encapsula el contenido-->
+
+        <aside class="rightBar">
+            <h2>Ciudades Favoritas</h2>
+            <ul>
+                <li><a href="#Dubai">Dubai</a></li>
+                <li><a href="#Paris">Paris</a></li>
+                <li><a href="#">Valencia</a></li>
+                <li><a href="#">Sevilla</a></li>
+            </ul>
+        </aside>
+
+        <section id="Dubai">
+            <header>
+                <h2>Dubai</h2>
+                <h4>Ciudad de Ricos</h4>
+            </header>
+
+            <article>
+                <p>Es uno de los siete emiratos que conforman los Emiratos Árabes Unidos</p>
+                
+                <figure>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.magriturismo.com%2Fmagritours%2Fwp-content%2Fuploads%2F2018%2F05%2Fdubai.jpg&f=1&nofb=1"
+                        alt="Dubai" style="width: 150px;">
+                    <figcaption>
+                        <h2 class="figcaption">Dubai</h2>
+                        <p class="figcaption">Dubai is the capital and largest city of the United Arab Emirates. It is
+                            located in the Persian Gulf, in the south-eastern part of the country.</p>
+                    </figcaption>
+                </figure>
+            
+            </article>
+
+            <footer>
+                <p><a href="https://es.wikipedia.org/wiki/Dubai">Wikipedia</a></p>
+                <p class="footer">Autor: Davetto Fecha: 10 de Enero del 2022</p>
+            </footer>
+        </section>
+
+        <section id="Paris">
+            <header>
+                <h2>Paris</h2>
+                <h4>Ciudad de LadyBug y Cat Noir</h4>
+            </header>
+
+            <article>
+                <p>París, es la capital de Francia, y es una de las ciudades más importantes de el país y de Europa.</p>
+                
+                <figure>
+                    <a href="https://viajes.nationalgeographic.com.es/c/paris"><img
+                            src="https://viajes.nationalgeographic.com.es/medio/2019/03/19/paris_db32a18e_1280x720.jpg"
+                            alt="" style="width: 250px;"></a>
+                </figure>
+            
+            </article>
+
+            <footer>
+                <p><a href="https://es.wikipedia.org/wiki/Paris">Wikipedia</a></p>
+                <p class="footer">Autor: Davetto Fecha: 10 de Enero del 2022</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Davetto 2022</p>
+    </footer>
+
+
+</body>
+
+</html>
