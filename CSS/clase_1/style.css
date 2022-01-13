@@ -1,42 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/*****Sintaxis básica******/
+
 /* selector{
     propiedad:valor;
 }
  */
-header{
-    color: #1a3adb;
+
+h1{
+    color: dodgerblue;
+    text-align: center;
 }
 
-.contenedor{
-    background-color: blue;
+h2{
+    color: #1ae2b0;
+    text-align: end;
+}
+
+/******Selectores básicos*****/
+
+/* Por etiqueta */
+/* Se escribe directamente el nombre de la etiqueta y este aplicara estilos a todos elementos con esa etiqueta*/
+p{
+    color:red;
+    font-size: 20px;
+}
+
+/*Por clase*/
+/*
+    -Se escribe un "." seguido del nombre de la clase que le hayamos dado.
+    -Estos estilos se aplicarán a todos los elementos que se les haya agregado dicha clase.
+    -Puedes repetir las clases a los elementos que creas necesario.
+*/
+.selector-clase{
+    color: blue;
+    font-size: 25px;
+}
+
+/* Por ID */
+/* 
+    -Se escribe un "#" seguido del nombre del ID que le hayamos dado.
+    -A diferencia de las clases, en los ID no puede haber más de un ID con el mismo nombre.
+*/
+#selector-id{
+    color: palevioletred;
+    font-size: 30px;
+}
+
+/*****Herencia, Cascada y Especifidad*****/
+
+/* Herencia*/
+/* -La herencia hace referencia aquel los elementos padres heredarán sus propiedades a sus elementos hijos-*/
+.herencia{
+    background-color: dodgerblue;
     color: white;
 }
-
-.subtitulo{
+/* Cascada */
+/* La cascada hace referencia a que los estilos se van a sobrescribir a sus anteriores, es decir, si tenemos declarado 2 selectores idénticos, se van a tomar los estilos del último que se haya escrito. */
+.cascada-ejemplo{
+    color: firebrick;
+}
+.cascada-ejemplo{
     color: dodgerblue;
-    color:red
+    color: greenyellow;
 }
 
-.subtitulo{
-    color: #598e9b;
-}
-
-span .prueba-especificidad{
+/* Especificidad */
+/* La especificidad es muy importante, ya que hace parecer que "rompe" la cascada, y este hace referencia a que cuando hay 2 o más selectores que hacen referencia al mismo elemento, se aplicaran los estilos al que tenga una mayor especificidad. */
+h5{
     color: red;
 }
 
-.prueba-especificidad{
-    color: yellowgreen;
+div div h5{
+    color: dodgerblue;
 }
 
+/* Especificidad con selectores */
+/* 
+    -Etiquetas tienen especificad de (001)
+    -Clases tienen especificad de (010)
+    -ID tienen especificad de (100)
+*/
 
-#h3-id{
-    color: blue;
+#ejemplo-id{
+    color: mediumaquamarine;
 }
 
-.h3-especificidad{
-    color: green;
+.ejemplo-clase{
+    color:lawngreen;
 }
 
-h3{
-    color: hotpink;
+h6{
+    color: indigo;
+    font-size: 20px;
 }
+/* por ello sin importar la cascada siempre se van a respetar los estilos con una mayor especificidad */
