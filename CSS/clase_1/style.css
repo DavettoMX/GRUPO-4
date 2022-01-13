@@ -1,0 +1,42 @@
+/* selector{
+    propiedad:valor;
+}
+ */
+header{
+    color: #1a3adb;
+}
+
+.contenedor{
+    background-color: blue;
+    color: white;
+}
+
+.subtitulo{
+    color: dodgerblue;
+    color:red
+}
+
+.subtitulo{
+    color: #598e9b;
+}
+
+span .prueba-especificidad{
+    color: red;
+}
+
+.prueba-especificidad{
+    color: yellowgreen;
+}
+
+
+#h3-id{
+    color: blue;
+}
+
+.h3-especificidad{
+    color: green;
+}
+
+h3{
+    color: hotpink;
+}
