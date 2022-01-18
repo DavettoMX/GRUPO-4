@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#00ffbf75,#001aff7e),url("imagen-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: .1px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    background-color: #2f00ff98;
+    display: block;
+    padding: 20px;
+    border-radius: 50px;
+    margin:50vh auto ;
+    width: max-content;
+}
