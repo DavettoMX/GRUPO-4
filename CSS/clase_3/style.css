@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
+
+*{
+    /* margin: 0; */
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    background-color: #eee;
+}
+h1{
+    font-size: 50px;
+    color: #1eff5afb;
+    font-weight:700;
+
+}
+
+p{
+    color: white;
+    font-style: italic;
+    border-bottom: 2px double red;
+    background-color: dodgerblue;
+}
+
+a{
+    text-decoration: none;
+    border: 1px solid dodgerblue;
+    padding: 10px 30px;
+    color: dodgerblue;
+    transition: .2s;
+    /* ejeX, ejeY, difuminado, tamaño, color */
+    box-shadow: 10px 10px 10px blue ;
+    font-weight: 700;
+}
+
+a:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: .2s;
+    
+}
+
+.text{
+    background-color: transparent;
+    color: #161616;
+    border:none;
+    text-transform:none;
+    text-align: left;
+}
+
+.bold{
+    font-weight: 700;
+    color: dodgerblue;
+    text-decoration: 2px underline crimson;
+}
+
+.card{
+    width: 500px;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    border:3px dashed #a8a8a8;
+    box-shadow: 0px 0px 10px #797979 inset;
+}
+
+.card__title{
+    margin: 0;
+    font-size: 35px;
+    color: dodgerblue;
+    border-bottom: 2px solid #ccc;
+}
+
+.card__text{
+    background:none;
+    color: #363636;
+    border-bottom: none;
+    text-shadow: 0px 0px 5px #27ff2b;
+    font-family: sans-serif;
+
+}
+
+.card__link{
+    display: block;
+    width: max-content;
+    box-shadow: none;
+}
+
+
+
