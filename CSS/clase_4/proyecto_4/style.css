@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(#8400ff9a,#0000ff9d),url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav{
+    background-color: #f8fafb48;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 100;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+}
+
+.nav__link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #f587c7;
+    transition: .2s;
+}
+
+.nav__link:hover{
+    background-color: #844cfb;
+}
+
+/* Hero main */
+
+.hero__main{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.subtitle{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    background-image: linear-gradient(#1100ffa4,#8c26ec78),url("img/bg1.jpg");
+    background-size: cover;
+    padding: 40px;
+    margin: 50px 0;
+    color: white;
+    box-shadow: 0px 0px 10px #0000006c;
+}
+
+.card-2{
+    background-image: linear-gradient(#0099ffa4,#26ecba78),url("img/bg2.jpg");
+}
+
+.card-3{
+    background-image: linear-gradient(#ff7b00a4,#26ec2678),url("img/bg3.jpg");
+}
+
+.card__link{
+    color: white;
+    text-decoration: none;
+    border:2px solid white;
+    padding: 10px 20px;
+    display: block;
+    width: max-content;
+    margin-top: 20px;
+}
