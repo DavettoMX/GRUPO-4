@@ -5,7 +5,9 @@
     - "~" Selecciona a todos los hermano de un elemento.
 
 */
-
+h2{
+    text-align: center;
+}
 div > a{
     color: dodgerblue;
     font-size: 50px;
@@ -58,8 +60,11 @@ header{
 .fondos{
     width: 100%;
     height: 500px;
+    max-width: 1200px;
+    margin: auto;
 }
 .imagen-fondo{
+
     background-image:url("img/imagen-fondo.jpg");
     background-size: cover;
     background-position: bottom;
