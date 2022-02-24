@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+  
+}
+.btn{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    width:max-content ;
+}
+
+.card{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: #eee;
+    display: grid;
+    place-content: center;
+    transition: .5s; 
+}
+
+.card__container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+   
+}
+
+.card__container img{
+    width: 100%;
+}
+
+.card__title{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.card__text{
+    font-size: 1.6rem;
+}
+
+.close{
+    width: 40px;
+    height: 40px;
+    background-color: dodgerblue;
+    display: grid;
+    place-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card:target{
+    opacity: 1;
+    z-index: 10;
+
+}
+
+.card:target .card__container{
+    animation: mostrarCard 1.5s;
+}
+
+
+@keyframes mostrarCard{
+    0%{
+        transform: translateY(-200%);
+    }
+    30%{
+        transform: translateY(0) rotate(-10deg) scale(1.5) ;
+
+    }
+    50%{
+        transform: translateY(0) rotate(10deg) ;
+        filter: blur(5px);
+        
+    }
+    70%{
+        transform:rotate(0) scale(1.1) rotate(-10deg) ;
+        filter: blur(2px);
+        
+    }
+    100%{
+        transform: translateY(0) scale(1) ;
+        
+    }
+}
+
+#inicio:target .card__container{
+    animation: adiosCard 1.5s;
+}
+
+@keyframes adiosCard{
+    100%{
+        transform: scale(1.5);
+    }
+}

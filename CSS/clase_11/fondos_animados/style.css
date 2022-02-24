@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+.fondo{
+    height: 50vh;
+    background-color: #eee;
+    animation: fondos 8s infinite alternate;
+    display: grid;
+    place-content: center;
+}
+p{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+@keyframes fondos {
+    0%{
+        background-image:  url("img-ani(1).jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background-image: url("img-ani(2).jpg");
+        background-size: cover;
+    }
+    100%{
+        background-image: url("img-ani(3).jpg");
+        background-size: cover; 
+    }
+}

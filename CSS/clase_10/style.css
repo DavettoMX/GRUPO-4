@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+.container{
+    border:3px solid black;
+    height: 500px;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.item{
+    font-size: 1.8rem;
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(1,.78,0,.95);
+    transition-delay: 5s;
+    transition: all 1s cubic-bezier(1,.78,0,.95); 
+}
+
+.container:hover .item{
+    background-color: dodgerblue;
+    text-align: end;
+    transform: translateX(200px);
+}
+
+#cuadrado{
+    height: 150px;
+    width: 150px;
+    background-color: dodgerblue;
+    margin: 0 auto;
+    transition: transform 4s cubic-bezier(1,.78,0,.95),background-color 10s ;
+    transition: all .2s;
+}
+
+a{
+   color: dodgerblue;
+   font-size: 2rem;
+   border:2px solid dodgerblue;
+   padding: 10px 20px;
+   display: block;
+   width: max-content;
+   margin: 20px auto; 
+}
+
+#cuadrado:target{
+    background-color: #941010;
+    transform: rotate(360deg);
+}
